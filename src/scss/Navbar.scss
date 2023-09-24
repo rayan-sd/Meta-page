@@ -1,0 +1,184 @@
+.Navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: calc(100% - 100px);
+    display: flex;
+    justify-content: flex-end;
+    padding: 25px 35px;
+    height: 80px;
+    transition: all 0.5s ease-in-out; 
+
+    .container-all {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .container-input {
+        position: relative;
+        width: 40%;
+        height: 50px;
+
+        input {
+            height: 40px;
+            background: transparent;
+            border: 0;
+            width: 100%;
+            border-bottom: 1px solid #E2E6E8;
+            // border-radius: 10px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            padding: 20px;
+            color: #E7E7E7;
+        }
+        input::placeholder {
+            color: #918f8f;
+        }
+        input:focus {
+            outline: none;
+            border: none;
+            border-bottom: 1px solid #E2E6E8;
+        }
+
+        button {
+            background: none;
+            border: none;
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+
+
+            .SearchIcon_sidebar {
+                width: 20px;
+                height: 20px;
+                background: none;
+                border: none;
+                color : #CACED3;
+            }
+        }
+    }
+
+    .container-text {
+        display: flex;
+        gap: 25px;
+        align-items: center;
+
+        button {
+            background: none;
+            border: none;
+
+            .SearchIcon_sidebar {
+                width: 24px;
+                height: 24px;
+                color: rgba(202, 206, 211, 1);
+            }
+
+            .SearchIcon_sidebar:nth-child(2) {
+                height: 16px;
+                width: 20px;                
+            }
+        }
+
+        span {
+            background: #7C2EFB;
+            border-radius: 15px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            color: #FFFFFF;
+            padding: 5px 20px;
+            display: flex;
+            gap: 5px;
+            align-items: center;
+        }
+
+        a {
+            background: #7C2EFB;
+            border-radius: 15px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            color: #FFFFFF;
+            padding: 10px 20px;
+            transition: 0.5s all;
+        }
+        a:hover {
+            background: transparent;
+            border: 1px solid #7C2EFB;
+            color: #7C2EFB;
+            transform: scale(1.05);
+        }
+        a:nth-child(2) {
+            background: #4D00EF;
+        } a:hover:nth-child(2) {
+            background: transparent;
+            border: 1px solid #4D00EF;
+            color: #4D00EF;
+        }
+
+
+        .box-rate {
+            background: linear-gradient(92.44deg, #0CA7D8 7.38%, #0F7EE4 48.06%, #0008CD 81.73%);
+            box-shadow: 0px 3px 8px rgba(1, 33, 147, 0.68);
+            border-radius: 15px;
+            font-family: 'Rubik Glitch';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 21px;
+            padding: 5px 25px;
+            color: #FFFFFF;
+        }
+
+        .box-user {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+
+            img {
+                width: 59px;
+                height: 59px;
+            }
+
+            .box-user-info {
+                display: flex;
+                flex-direction: column;
+
+                h3 {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 21px;
+                    color: #9A4AFF;
+                }
+
+                h4{
+                    font-family: 'Roboto';
+                    font-style: italic;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 14px;
+                    /* identical to box height */
+
+
+                    color: #C4C4C4;
+                }
+            }
+        }
+    }
+}
+.Navbar.expanded {
+    width: calc(100% - 200px);
+    // float:right;
+    padding: 25px 20px;
+}

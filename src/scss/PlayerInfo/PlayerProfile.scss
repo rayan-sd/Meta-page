@@ -1,0 +1,385 @@
+.player-profile {
+    width: 100%;
+    padding: 0px 20px 0px 20px;
+    margin-top: 70px;
+    // max-height: calc(100vh - 100px);
+    height: 90vh;
+    // overflow : ;
+
+    .stats-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        height: 100%;
+
+        .stats-back {
+            width: 100%;
+
+            span {
+                font-family: 'Plus Jakarta Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 21px;
+                color: #FFFFFF;
+            }
+        }
+
+        .stats-content {
+            display: flex;
+            width: 100%;
+            height: 100%;
+
+            .stats-left {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 50%;
+                // gap: 25px;
+                // padding-bottom: 15px;
+
+                .player-info {
+                    width: 100%;
+                    display: flex;
+                    height: 35vh;
+
+                    .player-image {
+                        flex-basis: 100%;
+                        position: relative;
+                        box-sizing: border-box;
+                        overflow: hidden;
+                        border-radius: 20px;
+                        
+                        img {
+                            object-fit: contain;
+                            border-radius: 20px;
+                            width: 100%;
+                            // background-color: #DEDEDE;
+                        }
+    
+                        span {
+                            position: absolute;
+                            top: 20px;
+                            left: 10px;
+                        }
+                    }
+
+                    .player-name {
+                        display: flex;
+                        flex-direction: column;
+                        // gap: 20px;
+                        justify-content: space-between;
+                        padding: 0 20px;
+                        // width: 50%;
+                        // height: 100%;
+                        box-sizing: border-box;
+                        // flex-basis: 100%;
+
+                        h1 {
+                            font-family: 'Plus Jakarta Sans';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 30px;
+                            line-height: 30px;
+                            color: #FFFFFF;
+                        }
+
+                        .reputation-season {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            width: 100%;
+
+                            .rs-flexbox {
+                                display: flex;
+                                flex-direction: column;
+                                // gap: 7px;
+
+                                h4 {
+                                    font-family: 'Roboto';
+                                    font-style: normal;
+                                    font-weight: 800;
+                                    font-size: 18px;
+                                    line-height: 15px;
+                                    color: #9A4AFF;
+                                }
+                                h5 {
+    
+                                    font-family: 'Roboto';
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    font-size: 18px;
+                                    line-height: 21px;
+                                    color: #9A4AFF;
+                                }
+                            }
+
+                            span {
+                                font-family: 'Roboto';
+                                font-style: normal;
+                                font-weight: 800;
+                                font-size: 18px;
+                                line-height: 21px;
+                                color: #FFFFFF;
+                            }
+
+                        }
+
+                        .player-history {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 5px;
+                            width: 100%;
+
+                            p {
+                                font-family: 'Roboto Regular';
+                                font-style: normal;
+                                font-weight: 100;
+                                font-size: 14px;
+                                line-height: 16px;
+                                color: #DEDEDE;
+                            }
+                        }
+
+                        .player-club {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            width: 100%;
+
+                            .current-club, .player-price {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 7px;
+
+                                p {
+                                    font-family: 'Plus Jakarta Sans';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 12px;
+                                    line-height: 18px;
+                                    color: #FFFFFF;
+                                }
+
+                                span {
+                                    font-family: 'Plus Jakarta Sans';
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    font-size: 14px;
+                                    line-height: 21px;
+                                    color: #FFFFFF;
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 10Px;
+
+                                    img {
+                                        width: 36px;
+                                        height: 36px;
+                                        border-radius: 5000px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .but-box {
+                            display: flex;
+                            align-items: center;
+                            width: 100%;
+                            justify-content: space-between;
+
+                            button {
+                                width: 48%;
+                                padding:  8px;
+                                font-family: 'Plus Jakarta Sans';
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 12px;
+                                line-height: 16px;
+                                background: #9A4AFF;
+                                border: 1px solid #FFFFFF;
+                                border-radius: 20px;
+                                color: #FFFFFF;
+                            }
+                        }
+                    }
+                }
+                .player-properties {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    gap: 15px;
+                    
+                    h2 {
+                        font-family: 'Plus Jakarta Sans';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 18px;
+                        color: #FFFFFF;
+                        padding-left: 5px;
+                    }
+                    .stats-properties {
+                        display: flex;
+                        flex-wrap: wrap;
+                        width: 100%;
+                        gap: 10px 10px;
+
+
+                        span {
+                            background: rgba(77, 0, 239, 0.6);
+                            border-radius: 38px;
+                            font-family: 'Plus Jakarta Sans';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 12px;
+                            line-height: 18px;
+                            padding: 10px 15px;
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+                .rating-stars {
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-between;
+                    padding-left: 5px;
+
+                    div {
+                        display: flex;
+                        gap: 5px;
+                        align-items: center;
+
+                        p, span {
+                            font-family: 'Plus Jakarta Sans';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 21px;
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+
+                .player-career {
+                    display: flex;
+                    flex-direction: column;
+                    height: 22vh;
+                    overflow-y: auto;
+                    gap: 10px;
+                    width: 100%;
+                    mix-blend-mode: normal;
+                    padding: 10px 0px 0px 0px;
+                    border: 1px solid rgba(207, 219, 213, 0.6);
+                    border-radius: 16px;
+                    transition: all 0.3s ease-in-out;
+
+                    .box-career {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 0 20px;
+
+                        button {
+                            background: none;
+                            border: 0;
+                            color: #DEDEDE;
+                            cursor: pointer;
+                        }
+                        .rotate-icon {
+                            transform: rotate(180deg);
+                            transition: transform 0.3s ease-in-out;
+                        }
+                    }
+                    
+
+                    h2 {
+                        font-family: 'Plus Jakarta Sans';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 18px;
+                        color: #FFFFFF;
+                    }
+
+                    .table-career {
+                        width: 100%;
+                        border-top: 1px solid #DEDEDE;
+                        padding: 10px 10px 0px 10px;
+                        transition: all 0.3s ease-in-out;
+
+                        
+                        table {
+                            width: 100%;
+                            text-align: center;
+                            border-collapse: collapse;
+                            // border-collapse: separate;
+                            // border-spacing: 20px 0;
+                            // table-layout: fixed;
+
+                            th {
+                                padding: 0 10px;
+                                font-family: 'Inter';
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 12px;
+                                line-height: 15px;
+                                color: #959FA8;
+                            }
+
+                            td {
+                                font-family: 'Plus Jakarta Sans';
+                                font-style: normal;
+                                font-weight: 300;
+                                font-size: 13px;
+                                line-height: 15px;
+                                color: #FFFFFF;
+                                height: 50px;
+                                mix-blend-mode: normal;
+                            }
+                            tbody {
+
+                                tr  {
+                                    border-bottom: 1px solid #DEDEDE;
+                                }
+                                tr:last-child {
+                                    border-bottom: 0px;
+                                }
+                            }
+
+                            .bold {
+                                font-weight: 700;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1600px) {
+    .player-profile .stats-container .stats-content .stats-left .player-info .player-name .reputation-season .rs-flexbox h4 {
+        font-size: 14px;
+    }
+    .player-profile .stats-container .stats-content .stats-left .player-info .player-name .reputation-season .rs-flexbox h5 {
+        font-size: 14px;
+    }
+
+    .player-profile .stats-container .stats-content .stats-left .player-info .player-name .player-history p {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .player-profile .stats-container .stats-content .stats-left .player-info .player-name .player-club .current-club span, .player-profile .stats-container .stats-content .stats-left .player-info .player-name .player-club .player-price span {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .player-profile .stats-container .stats-content .stats-left .player-info .player-name .player-club .current-club span img  {
+        width: 30px;
+        height: 30px;
+    }
+}

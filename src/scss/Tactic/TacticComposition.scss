@@ -1,0 +1,309 @@
+.TacticComposition {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    gap: 30px;
+
+    .composition-team {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        height: 98%;
+        gap: 1rem;
+        justify-content: space-between;
+        align-items: center;
+
+        .composition-button {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+
+            .composition-strategie {
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+                
+                .bb {
+                    width: 100%;
+                    color: #959FA8 !important;
+                    font-weight: 500;
+                    text-align: center;
+
+                    .select-custom {
+                        background-color: transparent !important;
+                        border: 0;
+                        font-size: 14px;
+                        font-family: 'Roboto Regular';
+                        font-weight: 100;
+                        width: 100%;
+                        border-radius: 0;
+                        border-bottom: 1px solid #959FA8;
+                    }
+                    
+                    .select-custom-focus {
+                        background-color: transparent !important;
+                        border: 0;
+                        font-size: 14px;
+                        font-family: 'Roboto Regular';
+                        font-weight: 100;
+                        width: 100%;
+                        // border: 1px solid #9A4AFF !important;
+                    }
+                }
+            }
+
+            .composition-systeme {
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+                color: #FFFFFF;
+                text-align: center;
+
+                .select-systeme {
+                    background: #4D00EF;
+                    border: 1px solid ;
+                    border: 1px solid #4D00EF;
+                    border-radius: 15px;
+                    width: 150px;
+                }
+                .select-systeme-focus {
+                    background: #4D00EF;
+                    border: 1px solid ;
+                    border: 1px solid #4D00EF;
+                    border-radius: 15px;
+                    width: 150px;
+                }
+
+
+                // select {
+                //     font-family: 'Roboto';
+                //     font-style: normal;
+                //     font-weight: 700;
+                //     font-size: 16px;
+                //     line-height: 19px;
+                //     border: 1px solid #4D00EF;
+                //     padding: 0 10px;
+                //     width: 30%;
+                //     height: 30px;
+                //     text-align: center;
+                //     color: #FFFFFF;
+                //     border-radius: 15px;
+                // }
+            
+                // select option:checked {
+                //     background: linear-gradient(#d6d6d6, #d6d6d6) !important;
+                //     background-color: #d6d6d6 !important; /* for IE */
+                //     color: #000000 !important;
+                // }
+                // .select-items:hover, .same-as-selected {
+                //     background-color: rgba(230, 40, 40, 0.1);
+                // }
+    
+                // select option {
+                //     font-size: 17px;
+                // }
+            }
+        }
+
+        .stadium-composition {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-image: url("./../../Images//tactic.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            align-items: center;
+            padding: 10px 0 10px 0;
+            border-radius: 5px;
+
+            .line {
+                display: flex;
+                gap: 2rem;
+                justify-content: space-between;
+
+                .player {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 5px;
+
+                    .number-kit {
+                        position: relative;
+                        img {
+                            width: 45px;
+                            height: 45px;
+                        }
+    
+                        h3 {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            -webkit-text-stroke-width: 1px;
+                            -webkit-text-stroke-color: #fff;;
+                            color: transparent;
+                            font-size: 'Roboto Regular';
+                            font-weight: 600;
+                            font-size: 16px;
+                        }
+                    }
+
+                    span {
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 14px;
+                        /* identical to box height */
+                        
+                        text-align: center;
+                        
+                        color: #E6D3FE;                        
+                    }
+
+                    .open-modal {
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+
+                        h5 {
+                            font-family: 'Roboto';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 10px;
+                            line-height: 9px;
+                            text-align: center;
+                            padding: 5px;
+                            color: #B6B6B6;
+                            border: 0.5px solid #B6B6B6;
+                            border-radius: 5000px;
+                            cursor: pointer;
+                        }
+
+                        button {
+                            border: 0.5px solid #B6B6B6;
+                            border-radius: 5px;
+                            font-family: 'Roboto';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 8px;
+                            line-height: 9px;
+                            padding: 3px 6px;
+                            text-align: center;
+                            color: #B6B6B6;
+                            overflow: hidden;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .composition-players {
+        width: 50%;
+        max-height: 98%;
+        background: linear-gradient(270deg, rgba(102, 0, 233, 0.26) 0%, rgba(73, 73, 73, 0) 100%);
+        border-radius: 5px;
+        padding: 10px;
+        overflow-y:auto;
+
+        table {
+            width: 100%;
+            text-align: center;
+            border-collapse: collapse;
+
+            th {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 10px;
+                line-height: 12px;
+                color: #9A4AFF;
+                height: 20px;
+            }
+
+            .flex-role {
+                position: relative;
+                right: 3px;
+            }
+
+            .button {
+                background: #4D00EF;
+                border-radius: 15px;
+                color: #FFFFFF;
+                padding: 10px 0;
+            }
+
+            .role {
+                position: relative;
+                z-index: 10;
+            }
+            .role:hover {
+                background-color: #959FA8;
+                color: black;
+            }
+
+            tr {
+                text-align: center;
+                display: grid;
+                // grid-template-columns: repeat(10, 1fr);
+                grid-template-columns: 0.4fr 0.6fr 1.5fr 1.5fr 1fr 1fr 1fr 1fr 1fr 0.5fr 0.5fr;
+                gap: 5px;
+                z-index: 0;
+            }
+
+            .index-up {
+                position: relative; 
+                z-index: 5;
+            }
+            
+            .index-up button {
+                position: relative; 
+                z-index: 10;
+                background: none;
+                border: 1px solid #9A4AFF;
+                padding: 1px 3px;
+                border-radius: 50%;
+                color: #FFFFFF;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background: #9A4AFF;
+                color: #FFFFFF;
+            }
+
+            td {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 10px;
+                line-height: 12px;
+                color: #959FA8;  
+                text-align: center;
+                display: flex;            
+                align-items: center;
+                justify-content: center;
+                height: 20px;
+            }
+            tbody {
+
+                tr  {
+                    border-bottom: 1px solid #dedede73;
+                    padding: 10px 0;
+                }
+                tr:last-child {
+                    border-bottom: 0px;
+                }
+            }
+        }
+    }
+}

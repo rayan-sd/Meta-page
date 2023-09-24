@@ -1,0 +1,136 @@
+.HomePage {
+    width: 100%;
+    padding: 0px 20px 0px 20px;
+    margin-top: 100px;
+    height: calc(100vh - 110px);
+    z-index: 0;
+    
+    .container-HomePage {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem 1rem;
+        
+        .container-Weekly-Tournament {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 49%;
+            position: relative;
+            height: 50%;
+            padding: 1rem;
+            border-radius: 5px;
+            background-color: #00461E;
+            // background: radial-gradient(26.29% 73.22% at 50.05% 53.59%, rgba(0, 255, 107, 0.47) 0%, #00461E 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;; 
+            gap: 30px;
+
+
+            .box-info-tournament {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+            }
+            .box-join-tournament {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                .box-flex {
+                    display: flex;
+                    align-items: center;
+                    gap: 7px;
+                    img {
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+            }
+            h2 {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 900;
+                font-size: 23px;
+                line-height: 26px;
+                color: #FFFFFF;
+            }
+
+            h3 {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 900;
+                font-size: 20px;
+                line-height: 24px;
+                color: #FFFFFF;
+            }
+
+            span {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 18px;
+
+                color: #FFFFFF;
+            }
+
+            p {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                color: #FFFFFF;
+            }
+
+            button {
+                margin-top: 10px;
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 21px;
+                /* identical to box height */
+                background: #FFFFFF;
+                border-radius: 100px;
+                color: #007330;
+                padding: 10px 50px;
+                width: 100%;
+                border: 0;
+            }
+        }
+
+        .container-League, .container-Tournament, .container-Game {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 49%;
+            height: 50%;
+            border-radius: 5px;
+            position: relative;
+
+            .shadow {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 30%;
+                background: linear-gradient(180deg, rgba(0, 34, 14, 0.85) 0%, rgba(0, 34, 14, 0) 100%);
+                border-radius: 5px 5px 0px 0px;
+                z-index: 5;
+            }
+
+            h2 {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 900;
+                font-size: 42px;
+                line-height: 51px;
+                color: #FFFFFF;
+            }
+        }
+    }
+}

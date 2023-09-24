@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("./Fonts/Roboto-Medium.ttf") format("truetype"),
+}
+
+@font-face {
+  font-family: "Roboto Regular";
+  src: url("./Fonts/Roboto-Regular.ttf") format("truetype"),
+}
+
+@font-face {
+  font-family: "Rubik Glitch";
+  src: url("./Fonts/RubikGlitch-Regular.ttf") format("truetype"),
+ }
+
+ @font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("./Fonts/PlusJakartaSans-Regular.ttf") format("truetype"),
+ } 
+
+body {
+  margin: 0;
+  color: #C1AAC6;
+  background: #17153A;
+  font-family: 'Montserrat', monospace;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+.app {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.content {
+  margin-left: 100px;
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0
+}
+
+*,
+:after,
+:before {
+  box-sizing: border-box
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

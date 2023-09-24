@@ -1,0 +1,133 @@
+.stats-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    // gap: 2rem;
+    margin-left: 50px;
+    padding: 0px 20px 0px 0 ;
+    border-radius: 35px;
+
+    .container-stats {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    h3 {
+        font-family: 'Plus Jakarta Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+        color: #FFFFFF;
+        padding-left: 5px;
+    }
+
+    span {
+        font-family: 'Plus Jakarta Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #DEDEDE;
+    }
+
+    .box-info-stats {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .statistic {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 5px;
+            // height: 34px;
+        }
+
+        .statistic:nth-child(even) {
+            background: rgba(233, 233, 233, 0.06);
+        }
+    }
+
+    .player-stats-left {
+        display: flex;
+        flex-direction: column;
+        // gap: 1.5rem;
+        width: 30%;
+        justify-content: space-between; 
+    }
+    .player-stats-middle {
+        display: flex;
+        width: 30%;
+        flex-direction: column;
+        // gap: 3rem;
+        justify-content: space-between; 
+    }
+
+    .player-stats-right {
+        display: flex;
+        width: 30%;
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: space-between; 
+    }
+
+    .player-stats-bottom {
+        display: flex;
+        width: 100%;
+        border: 1px solid #858C97;
+        border-radius: 15px;
+        height: 22vh;
+
+        .season-stats {
+            padding: 20px;
+            h3 {
+                font-family: 'Plus Jakarta Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 18px;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1600px) {
+    .stats-right {
+
+        span {
+            font-family: 'Plus Jakarta Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 20px;
+            color: #DEDEDE;
+        }
+
+        .box-info-stats {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+    
+            .statistic {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 3px 5px;
+                // height: 34px;
+            }
+    
+            .statistic:nth-child(even) {
+                background: rgba(233, 233, 233, 0.06);
+            }
+        }
+
+        .player-stats-right {
+            gap: 1rem;
+        }
+    }
+}

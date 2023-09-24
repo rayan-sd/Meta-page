@@ -1,0 +1,131 @@
+.modal {
+    position: fixed;
+    z-index: 6;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.371);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .modal-content-tournament {
+        position: relative;
+        border-radius: 15px;
+        background: rgba(36, 36, 36, 0.95);
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding: 25px 70px;
+        width: 65%;
+
+        h2 {
+            color: #FFF;
+            font-size: 25px;
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        .title-modal-tournament {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding-top: 20px;
+
+            .name-city {
+                display: flex;
+                justify-content: center;
+                align-items: baseline;
+                gap: 15px;
+                // align-items: center;
+
+                p {
+                    color: #AAA;
+                    font-size: 18px;
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+
+            div {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .close {
+                float: right;
+                color: #aaaaaa;
+                font-size: 28px;
+                position: absolute;
+                top: 4px;
+                right: 10px;
+                font-weight: bold;
+            }
+            .close:hover,
+            .close:focus {
+              color: red;
+              text-decoration: none;
+              cursor: pointer;
+            }
+        }
+
+
+        .flex-tournament {
+            display: flex;
+            justify-content: space-between;
+
+            p {
+                color: #AAA;
+                font-size: 16px;
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+
+            div {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                align-items: center;
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                }
+            }
+        }
+
+        .but-box {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+
+            button {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 25px;
+                padding: 12px 50px;
+                color: #FFFFFF;
+                border-radius: 15px;
+                background: #4D00EF;
+                border: 0;
+                cursor: pointer;
+            }
+            button:hover {
+                color: #4D00EF;
+                background: #FFFFFF;
+                font-weight: 700;
+            }
+        }
+    }
+}

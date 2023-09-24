@@ -1,0 +1,215 @@
+::-webkit-scrollbar {
+    width: 10px; /* Largeur de la barre de défilement */
+}
+
+/* C'est le fond de la barre de défilement. */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Couleur de fond de la barre de défilement */
+    border-radius: 10px;
+}
+
+/* C'est la barre de défilement elle-même (la "thumb"). */
+::-webkit-scrollbar-thumb {
+    background: #555; /* Couleur de la barre de défilement */
+    border-radius: 10px;
+    // border: 1px solid #DEDEDE;
+}
+
+/* Lorsque vous survolez la barre de défilement avec la souris. */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Couleur de la barre de défilement au survol */
+}
+
+.box-filter-marketplace {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 20%;
+
+    .rotate-icon {
+        transform: rotate(180deg);
+        transition: transform 0.3s ease-in-out;
+        cursor: pointer;
+    }
+    
+
+    .box-filter-all {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        h4 {
+            font-family: 'Plus Jakarta Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 30px;
+            color: #FFFFFF;
+        }
+
+        button {
+            background: rgba(217, 217, 217, 0.2);
+            border-radius: 38px;
+            font-family: 'Plus Jakarta Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 18px;
+            color: #FFFFFF;
+            padding: 4px 10px;
+            border: 0;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #4D00EF;
+            border-radius: 38px;
+        }
+    }
+
+    .box-filter-content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        overflow: auto;
+        max-height: calc(100vh - 230px);
+        padding-right: 10px;
+
+        .box-status, .box-price, .box-position, .box-nationality, .box-Season {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            border: 1px solid #DEDEDE;
+            transition: transform 0.3s ease-in-out;
+            border-radius: 14px;
+            padding: 15px 15px 15px;
+
+            .box-but {
+                cursor: pointer;
+                background: transparent;
+                padding: 0;
+            }
+            .box-but:hover {
+                background: transparent;
+            }
+        
+        }
+        .box-title-filter, .box-title-position, .box-title-price, .box-title-nationality, .box-title-Season   {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .box-content-filter {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .box-position {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+            border: 1px solid #DEDEDE;
+            border-radius: 14px;
+            padding: 15px 15px 15px;
+        }
+        .box-content-position {
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+            width: 100%;
+            align-items: baseline;
+
+            div {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+            }
+
+            label {
+                font-family: 'Plus Jakarta Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 18px;
+                color: #777E91;
+            }
+            input[type="checkbox"]:checked + label {
+                color: #FFFFFF;
+            }
+
+            input[type="checkbox"] {
+                width: 20px;
+                height: 20px;
+                border-radius: 20px;
+                border: 1px solid #DEDEDE;
+                border-radius: 4px;
+                background: transparent;
+            }
+        }
+
+        .box-price {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+            border: 1px solid #DEDEDE;
+            border-radius: 14px;
+            padding: 15px 15px 15px;
+
+        }
+        .box-content-nationality {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+
+            input {
+                width: 100%;
+                height: 25px;
+                border-radius: 10px;
+                border: 0;
+                padding: 0 5px 0 10px;
+                font-size: 10px;
+                font-style: italic;
+            }
+        }
+
+        .box-content-price {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        button {
+            background: rgba(217, 217, 217, 0.2);
+            border-radius: 38px;
+            font-family: 'Plus Jakarta Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 18px;
+            color: #FFFFFF;
+            padding: 4px 10px;
+            border: 0;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #4D00EF;
+            border-radius: 38px;
+        }
+        
+        h4 {
+            font-family: 'Plus Jakarta Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 21px;
+            color: #FFFFFF;
+        }
+    }
+
+
+}

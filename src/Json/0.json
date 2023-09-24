@@ -1,0 +1,80 @@
+{
+   "Reputation": "Sub",
+   "Bases": "Mason",
+   "Nationality": "Turquie",
+   "Last Name": "ünal",
+   "First Name": "Baris",
+   "Season": "Genesis",
+   "Position": "CB",
+   "DNA": "Warrior",
+   "Temper": "Peu Fêtard",
+   "Good Foot": "Left Footed",
+   "Height (cm)": 184,
+   "Weight (kg)": 81,
+   "Potential": 5,
+   "Wrong Foot": 4,
+   "Technical Gestures": 3,
+   "Mentorship": 3,
+   "Stats": {
+      "Defense": {
+         "Tacles debout": 65,
+         "Tacles glisses": 54,
+         "Marquage": 55,
+         "Anticipation": 65,
+         "Placement defensif": 58,
+         "Duel Aerien": 50
+      },
+      "Physque": {
+         "Force": 45,
+         "Agressivite": 42,
+         "Detente": 39,
+         "Equilibre": 64,
+         "Endurance": 45,
+         "Volume de jeu": 49,
+         "Vitesse": 49,
+         "Acceleration": 44,
+         "Reactivite": 62
+      },
+      "Technique": {
+         "Dribble": 44,
+         "Fluidite": 43,
+         "Creativite": 45,
+         "Controle": 34,
+         "Agilite": 53
+      },
+      "Passe": {
+         "Passe courte": 62,
+         "Passe longue": 38,
+         "Corner": 49,
+         "Precision": 45,
+         "Vista": 49,
+         "QI": 52,
+         "Centre": 52
+      },
+      "Tir": {
+         "Finition": 39,
+         "Tir de loin": 42,
+         "Appel": 48,
+         "Tete Offensive": 49,
+         "Penalty": 41,
+         "Placement Offensif": 35,
+         "Coup Franc": 44,
+         "Power Shoot": 44
+      },
+      "Mental": {
+         "Calme": 70,
+         "Motivation": 54,
+         "Leadership": 61,
+         "Concentration": 65,
+         "Effort Def": 56,
+         "Apport off": 56,
+         "Jeu en equipe": 65
+      },
+      "Moyenne Defense": 57,
+      "Moyenne Physque": 47,
+      "Moyenne Technique": 43,
+      "Moyenne Passe": 49,
+      "Moyenne Tir": 42,
+      "Moyenne Mental": 61
+   }
+}

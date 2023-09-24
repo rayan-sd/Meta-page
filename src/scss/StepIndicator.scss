@@ -1,0 +1,18 @@
+.step-indicator {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .step-indicator__circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid #4D00EF;
+  }
+  
+  .step-indicator__circle--active {
+    background: #4D00EF;
+  }
+  

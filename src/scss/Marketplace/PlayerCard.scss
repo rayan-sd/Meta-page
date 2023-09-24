@@ -1,0 +1,115 @@
+.box-player::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+}
+.box-player {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+    min-height: 350px;
+    position: relative;
+
+    .box-top-card {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 10px 15px;
+
+
+        .flex-box {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        h2 {
+            font-family: 'Plus Jakarta Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.897);
+            /* identical to box height, or 188% */
+            color: #FFFFFF;
+            letter-spacing: 0.02em;
+            z-index: 1;
+        }
+
+        h3 {
+            font-family: 'Plus Jakarta Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 30px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            z-index: 1;
+            color: #FFFFFF;
+            /* identical to box height, or 188% */
+
+            letter-spacing: 0.02em;
+        }
+    }
+
+    .box-bottom-card {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background: rgba(0, 0, 0, 0.55);
+        border-radius: 20px;
+        padding: 10px 15px;
+        
+
+
+        h4 {
+            font-family: 'Plus Jakarta Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 20px;
+            letter-spacing: 0.02em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            color: #F5F7FA;
+            z-index: 1;
+        }
+
+        h5 {
+            z-index: 1;
+            font-family: 'Plus Jakarta Sans';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 15px;
+            text-align: right;
+            color: #F5F7FA;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            opacity: 0.6;
+        }
+
+        .box-reputation-card {
+            display: flex;
+            justify-content: space-between;
+            // align-items: center;
+        }
+        
+        .align-box {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .box-content-card {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+    }
+
+}
